@@ -1,10 +1,9 @@
-﻿@modelGarageMVC.Models.Garage;
+﻿@model Garage.Models.Garage;
 @{
     ViewData["Title"] = "Home Page";
     List<Auto> autosList = Model.GetAutos();
 }
-
-<h3>Garaje: @Model.getDescripcion() </h3>
+<h3>Garage: @Model.getDescripcion() </h3>
 <table class="table">
     <tr>
         <th>Numero</th>
@@ -16,13 +15,13 @@
         <tr>
             <td>
 
-                @Html.DisplayFor(modelItem => item.numeroAuto)
+                @Html.DisplayFor(modelItem => item.NumeroAuto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.marca)
+                @Html.DisplayFor(modelItem => item.Marca)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.placa)
+                @Html.DisplayFor(modelItem => item.Placa)
             </td>
         </tr>
     }

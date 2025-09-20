@@ -3,7 +3,7 @@
     public class Garage
     {
         public int NumeroGaraje { get; set; }
-        public string Descripcion    { get; set; }
+        public string Descripcion { get; set; }
         public int CapacidadEspacios { get; set; }
         public int EspaciosOcupados { get; set; }
         
